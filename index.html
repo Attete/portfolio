@@ -45,7 +45,47 @@
      #interest {padding: 30px 50px 0px 50px;  color: #000; background-color: #D3D3D3; border-radius: 5px;}
      #contact-me {padding: 30px 50px 0px 50px;  color: #000; background-color: #b9b9b9; border-radius: 5px;}
      #footer {padding: 20px 0px 20px 50px; background-color: #f2f2f2;}
+
+     #myBtn {
+         display: none; /* Hidden by default */
+         position: fixed; /* Fixed/sticky position */
+         bottom: 20px; /* Place the button at the bottom of the page */
+         right: 30px; /* Place the button 30px from the right */
+         z-index: 99; /* Make sure it does not overlap */
+         border: none; /* Remove borders */
+         outline: none; /* Remove outline */
+         background-color: #666666; /* Set a background color */
+         color: #f2f2f2; /* Text color */
+         cursor: pointer; /* Add a mouse pointer on hover */
+         padding: 15px; /* Some padding */
+         border-radius: 10px; /* Rounded corners */
+     }
+
+     #myBtn:hover {
+         background-color: #4d4d4d; /* Add a dark-grey background on hover */
+     }
+
     </style>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+    </script>
+
 </head>
 <body>
 <div class="container container-fluid" id="navbar">
@@ -87,13 +127,9 @@
                <p class="text-center">Solve the problem, then write the code.</p>
            </div>
            <div class="col-md-2">
-
-
            </div>
        </div>
-
-
-</div>
+  </div>
 
     <!-- SKILLS SECTION -->
     <div id="skills" class="container-fluid">
@@ -131,11 +167,6 @@
             <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%; background-color: #339933">
                 30% (Begginer)
             </div>
-        </div>
-
-        <div>
-            <br><br>
-            <a href="#navbar"><button style="float: right; color : black" class="fa fa-angle-up"></button></a>
         </div>
     </div>
 
@@ -231,11 +262,6 @@
                 </div>
             </div>
         </div>
-
-
-        <div>
-            <a href="#navbar"><button style="float: right; color : black" class="fa fa-angle-up"></button></a>
-        </div>
     </div>
 
     <!-- INTEREST SECTION -->
@@ -253,12 +279,6 @@
             </div>
         </div>
         <br>
-
-
-        <div>
-
-            <a href="#navbar"><button style="float: right; color : black" class="fa fa-angle-up"></button></a>
-        </div>
     </div>
 
     <!-- CONTACT SECTION -->
@@ -300,18 +320,14 @@
             <div class="col-xs-7">
             </div>
         </div>
-
-
-        <div>
-            <br><br><br>
-            <a href="#navbar"><button style="float: right; color : black" class="fa fa-angle-up"></button></a>
-        </div>
     </div>
 
     <!-- FOOTER SECTION -->
     <div id="footer" class="container-fluid">
         Copyright &#169; Ewa Panonko 2017
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </div>
 
