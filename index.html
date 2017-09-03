@@ -22,11 +22,12 @@
      h3 {
            color: #595959;
            font-family: 'Holtwood One SC', 'Arial Black';
+           font-size: 30px;
      }
 
      h5 {
            color: #595959;
-           font-size: 15px;
+           font-size: 16px;
            font-family: 'Arial', 'Times', 'serif';
      }
 
@@ -59,13 +60,15 @@
            background-color: #b9b9b9
      }
 
-     #about-me {padding: 20px 20px 20px 20px; color: #000;  background-color: #bfbfbf; border-radius: 5px;}
+     /* Panelled sections of the page */
+     #about-me {padding: 30px 20px 20px 20px; color: #000;  background-color: #bfbfbf; border-radius: 5px;}
      #skills {padding: 20px 70px 20px 50px;  color: #000; background-color: #D3D3D3; border-radius: 5px;}
      #work {padding: 20px 50px 20px 50px;  color: #000; background-color: #bfbfbf; border-radius: 5px;}
      #interest {padding: 20px 50px 30px 50px;  color: #000; background-color: #D3D3D3; border-radius: 5px;}
      #contact-me {padding: 20px 50px 30px 50px;  color: #000; background-color: #bfbfbf; border-radius: 5px;}
      #footer {padding: 20px 0px 20px 50px; background-color: #f2f2f2;}
 
+     /*Button to scroll to the top of the page */
      #myBtn {
          display: none; /* Hidden by default */
          position: fixed; /* Fixed/sticky position */
@@ -81,8 +84,14 @@
          border-radius: 10px; /* Rounded corners */
      }
 
+     /*Button to scroll to the top of the page */
      #myBtn:hover {
          background-color: #4d4d4d; /* Add a dark-grey background on hover */
+     }
+
+     /* Hover effect for fonts awesome */
+     .fa:hover {
+         opacity: 0.7;
      }
     </style>
 
@@ -153,7 +162,7 @@
 
     <!-- SKILLS SECTION -->
     <div id="skills" class="container-fluid">
-     <h3>Skills</h3>
+     <h3>Skills</h3><br>
         <p class="standard-text"><h5>Java:</h5></p>
         <div class="progress">
             <div class="progress-bar s" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #339933">
@@ -192,7 +201,7 @@
 
     <!-- WORK SECTION -->
     <div id="work" class="container-fluid">
-    <h3>Work</h3>
+    <h3>Work</h3><br>
        <div clas="row">
            <div class="col-md-4">
                <div class="thumbnail thumbnail-settings">
@@ -288,14 +297,14 @@
     <div id="interest" class="container-fluid">
         <h3>Interest</h3><br>
         <div clas="row">
-            <div class="col-xs-4">
-              <i class="fa fa-code" style="font-size:25px; color: grey"> Programming </i>
+            <div class="col-md-4 h3">
+              <i class="fa fa-code" style="font-size:30px; color: grey"> Programming </i>
             </div>
-            <div class="col-xs-4">
-              <i class="fa fa-anchor" style="font-size:25px; color: grey"> Sea </i>
+            <div class="col-md-2 h3">
+              <i class="fa fa-anchor" style="font-size:30px; color: grey"> Sea </i>
             </div>
-            <div class="col-xs-4">
-              <i class="fa fa-glass" style="font-size:25px; color: grey"> Gin </i>
+            <div class="col-md-6 h3">
+              <i class="fa fa-glass" style="font-size:30px; color: grey"> Gin </i>
             </div>
         </div>
         <br>
@@ -303,35 +312,34 @@
 
     <!-- CONTACT SECTION -->
     <div id="contact-me" class="container-fluid">
-        <h3>Contact</h3>
-<br>
+        <h3>Contact</h3><br>
 
         <div clas="row">
-            <div class="col-xs-1">
+            <div class="col-xs-1 h5">
                 <a href="mailto:someone@example.com" target="_blank">
                     <i class="fa fa-envelope-o" style="font-size:20px; color: grey"></i>
                 </a>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-1 h5">
              <a href="https://www.linkedin.com/in/e-panonko" target="_blank">
                  <i class="fa fa-linkedin" style="font-size:20px; color: grey"></i>
              </a>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-1 h5">
             <a href="https://codepen.io/attete/" target="_blank">
                 <i class="fa fa-codepen" style="font-size:20px; color: grey"></i>
             </a>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-1 h5">
                 <a href="https://www.freecodecamp.org/attete" target="_blank">
                     <i class="fa fa-free-code-camp" style="font-size:20px; color: grey"></i>
                 </a>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-1 h5">
                 <a href="https://github.com/Attete" target="_blank">
                     <i class="fa fa-github" style="font-size:20px; color: grey"></i>
                 </a>
